@@ -52,4 +52,9 @@ public class SomeTest extends Base {
         run();
     }
 
+    @Test public void testSlow() throws InterruptedException {
+        Thread.sleep(30000);
+        run();
+    }
+
 }
